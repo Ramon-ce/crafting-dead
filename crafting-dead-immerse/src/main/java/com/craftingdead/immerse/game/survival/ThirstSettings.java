@@ -28,10 +28,10 @@ public record ThirstSettings(
     int sprintingDecayAmount,
     int damageIntervalTicks) {
 
-  private static final int DECAY_INTERVAL_TICKS = 800;
-  private static final int DECAY_AMOUNT = 5;
-  private static final int SPRINTING_DECAY_AMOUNT = 10;
-  private static final int DAMAGE_INTERVAL_TICKS = 120;
+  private static final int DECAY_INTERVAL_TICKS = 2000;
+  private static final int DECAY_AMOUNT = 30;
+  private static final int SPRINTING_DECAY_AMOUNT = 60;
+  private static final int DAMAGE_INTERVAL_TICKS = 400;
 
   public static final Codec<ThirstSettings> CODEC =
       RecordCodecBuilder.create(instance -> instance
